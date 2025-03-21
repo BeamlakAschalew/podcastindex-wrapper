@@ -1,0 +1,19 @@
+{
+  "name": "beamlak/podcastindex-wrapper",
+  "description": "A wrapper around podcastindex.org API for a simpler usage",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Beamlak\\PodcastindexWrapper\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Beamlak Aschalew",
+      "email": "birrletej12@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.9"
+  }
+}
