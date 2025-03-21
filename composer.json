@@ -2,6 +2,8 @@
   "name": "beamlak/podcastindex-wrapper",
   "description": "A wrapper around podcastindex.org API for a simpler usage",
   "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
   "autoload": {
     "psr-4": {
       "Beamlak\\PodcastindexWrapper\\": "src/"
@@ -13,6 +15,7 @@
       "email": "birrletej12@gmail.com"
     }
   ],
+  "minimum-stability": "stable",
   "require": {
     "guzzlehttp/guzzle": "^7.9"
   }
