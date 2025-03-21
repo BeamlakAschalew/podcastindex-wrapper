@@ -1,5 +1,5 @@
 <?php
-namespace PodcastIndex\Exceptions;
+namespace PodcastIndexWrapper\Exceptions;
 
 class InvalidSecretException extends PodcastIndexException
 {

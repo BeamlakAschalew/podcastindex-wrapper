@@ -1,5 +1,5 @@
 <?php
-namespace PodcastIndex;
+namespace PodcastIndexWrapper;
 
 use DateTime;
 use DateTimeZone;

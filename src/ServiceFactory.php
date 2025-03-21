@@ -1,7 +1,7 @@
 <?php
-namespace PodcastIndex;
+namespace PodcastIndexWrapper;
 
-use PodcastIndex\Services\Service;
+use PodcastIndexWrapper\Services\Service;
 
 class ServiceFactory
 {

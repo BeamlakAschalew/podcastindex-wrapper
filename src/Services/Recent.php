@@ -1,5 +1,5 @@
 <?php
-namespace PodcastIndex\Services;
+namespace PodcastIndexWrapper\Services;
 
 class Recent extends Service
 {

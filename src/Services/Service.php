@@ -1,7 +1,7 @@
 <?php
-namespace PodcastIndex\Services;
+namespace PodcastIndexWrapper\Services;
 
-use PodcastIndex\Client;
+use PodcastIndexWrapper\Client;
 
 abstract class Service
 {
