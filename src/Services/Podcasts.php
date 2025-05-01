@@ -26,6 +26,26 @@ class Podcasts extends Service
         ]);
     }
 
+    public function byGuid($guid)
+    {
+        return $this->get('byguid', [
+            'guid' => $guid
+        ]);
+    }
+
+    public function byMedium($medium, array $params = [])
+    {
+        return $this->get('bymedium', array_merge($params, [
+            'medium' => $medium
+        ]));
+    }
+
+    public function trending(array $params = [])
+    {
+        return $this->get('trending', $params);
+
+    }
+
     public function add(string $feedUrl)
     {
         return $this->client->add->byFeedUrl($feedUrl);

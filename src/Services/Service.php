@@ -47,4 +47,31 @@ abstract class Service
     {
         return array_merge($this->parameters, $query);
     }
+
+    /**
+     * Slice an array into pages.
+     *
+     * @param  array  $items
+     * @param  int    $page
+     * @param  int    $perPage
+     * @return array  [ 'data' => array, 'meta' => array ]
+     */
+    protected function paginate(array $items, int $page = 1, int $perPage = 10): array
+    {
+        $total    = count($items);
+        $lastPage = (int) ceil($total / $perPage);
+        $page     = max(1, min($page, $lastPage));
+        $offset   = ($page - 1) * $perPage;
+        $slice    = array_slice($items, $offset, $perPage);
+
+        return [
+            'data' => $slice,
+            'meta' => [
+                'total'        => $total,
+                'per_page'     => $perPage,
+                'current_page' => $page,
+                'last_page'    => $lastPage,
+            ],
+        ];
+    }
 }
